@@ -2,6 +2,7 @@ function Pessoa(nome, idade, corFavorito) {
     this.nome = nome
     this.idade = idade
     this.corFavorito = corFavorito
+    // ...
 }
 
 function verificaMenosVelho(pessoas) {
@@ -23,11 +24,12 @@ function verificaMenosVelho(pessoas) {
     return pessoaMenosVelha
 }
 
+// function checaCoresFavoritas()
 
 function listaRegistros(registros) {
-    
+    //for (let registro of registros) {
 
-     }
+    // }
     console.log('Esses são os registros que foram feitos:')
     registros.forEach( registro => {
         console.log(`${registro.nome} possui ${registro.idade} anos`)
@@ -38,15 +40,15 @@ let registros = []
 
 while (true) {
     
-    
+    // pega os dados
     let nome = prompt('Digite seu nome:')
     let idade = Number(prompt('Digite seu idade:'))
     let corFavorito = prompt('Digite seu cor favorito:')
 
-    
+    // cria o registro
     let pessoa = new Pessoa(nome, idade, corFavorito)
 
-    
+    // guarda o registro
     registros.push(pessoa)
 
     let resposta = prompt("Deseja registrar outra pessoa? ")
